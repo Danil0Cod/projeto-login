@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/*
+Paleta de cores: verde:#4C736F, marrom:#735451
+ */
+
+* {
+    font-family: "Segoe UI",sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #4C736F;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 515px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+#login #imagem {
+    display: block;
+    background: #4C736F url("../imagens/fundo.jpg") no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+#login #formulario {
+    display: block;
+    padding: 10px;
+}
+
+#formulario h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formulario p {
+    font-size: .8em;
+}
+
+.campo {
+    background-color: #A6938F;
+    border: 2px solid #A6938F;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+.campo label {
+    display: none;
+}
+
+.campo i {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 4.5px;
+}
+
+.campo input {
+    background-color: rgba(157, 211, 199, 0.94);
+    font-size: 1em;
+    width:calc(100% - 44.5px);
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+    padding: 6px;
+    transform: translateY(-12px);
+}
+
+.campo input:focus-within {
+    background-color: white;
+}
+
+input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #4C736F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #2f4c48;
+}
+
+.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #4C736F;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #2f4c48;
+    padding-top: 7px;
+    margin-top: 5px;
+}
+
+.botao:hover {
+    background-color: #6dc1b8;
+}
+
+.botao i {
+    font-size: .8em;
+}
